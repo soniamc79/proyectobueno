@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+/*normas generales*/
+*{margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;/*para que lo ajuste todo dentro de las cajas*/
+    border-radius: 10px;/*para que los bordes sean redondeados, al ponerlo aqui afecta a toda nuestra pagina*/
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+body{background-color: beige;
+}
+
+.contenedor_principal{background-color: rgb(144, 191, 144) ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 1px solid rgb(83, 179, 83);
+}
+
+
+/*normas del header*/
+.header{background-color: rgb(242, 173, 147);
+    height: auto;
+    border: 1px solid rgb(246, 83, 110);}
+h1{background-color: grey;
+text-align: center;
+}
+h2{background-color: grey;
+text-align: center;}
+
+h1, h2{border: 2px solid black;
+font-size: 40px;}
+
+/*normas del main*/
+.main{background-color:rgb(242, 173,147) ;
+    
+    border: 1px solid rgb(246, 83, 110);}
+
+.parrafo{background-color: grey;
+margin: 20px;
+border: 1px solid black;}
+  
+    
+
+/*normas del footer*/
+.footer{background-color:rgb(242, 173, 147) ;
+border: 1px solid rgb(246, 83, 110);
+text-align: center;}
+
+    .pie a{background-color: grey;
+    text-align: center;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;}

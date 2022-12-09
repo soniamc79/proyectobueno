@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+/*comunes para todas*/
+*{margin: 10px;
+padding: 10px;
+box-sizing: border-box;/*para que lo ajuste todo dentro de las cajas*/
+border-radius: 10px;/*para que los bordes sean redondeados, al ponerlo aqui afecta a toda nuestra pagina*/
+font-family: 'Roboto Slab', serif;
+
+}
+
+body{background: beige;}
+/*container principal*/
+.container{background-color:rgb(144, 191, 144);
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+border: 1px solid rgb(83, 179, 83);
+
+}
+/*estilos del header*/
+.header{background-color:rgb(242, 173, 147);
+    border: 1px solid rgb(246, 83, 110);
+    display: flex;
+    flex-direction: column;
+}
+header h1{font-size: 50px;
+text-align: center;}
+
+nav{display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;}
+
+nav a{background-color: black;
+color: white;
+text-decoration: none;
+display: flex;
+
+
+}
+
+/*estilos del main*/
+.main{background-color:rgb(242, 173, 147);
+    border: 1px solid rgb(246, 83, 110);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+
+}
+
+main div{ background-color: grey;
+padding: 15px;
+margin: 15px;
+border: 1px solid black;
+
+}
+
+.subir{ background: black;
+color: white;
+text-decoration: none;
+padding: 10px;
+    
+}
+/*procedimientos primitivos*/
+.primero section{background: white;
+margin: 20px;
+display: flex;
+flex-direction: row;}
+
+#primitivos{background: rgb(219, 216, 216);
+text-align: center;}
+
+/*sistema de pisado*/
+.pisado article img{width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;}
+    
+    .pisado{display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;}
+.pisado h1{background-color:rgb(209, 204, 204);
+color:black;
+display: flex;
+flex-basis: 100%;
+text-align: center;
+font-size: 30px;}
+
+.pisado img{display: flex;
+justify-content: center;}
+.pisado p{display: flex;
+    justify-content: right;}
+
+
+/*sistema de torsión*/
+
+.torsion article img{width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;}
+
+    .torsion{display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;}
+        .torsion h1{background-color:rgb(209, 204, 204);
+            color:black;
+            display: flex;
+            flex-basis: 100%;
+            text-align: center;
+            font-size: 30px;}
+
+/*presión con rodillos*/
+.rodillos article img{width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;}
+
+    .rodillos{display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;}
+        .rodillos h1{background-color:rgb(209, 204, 204);
+            color:black;
+            display: flex;
+            flex-basis: 100%;
+            text-align: center;
+            font-size: 30px;}
+
+/*presion con mazas*/
+.mazas article img{width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;}
+
+    .mazas{display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;}
+        .mazas h1{background-color:rgb(209, 204, 204);
+            color:black;
+            display: flex;
+            flex-basis: 100%;
+            text-align: center;
+            font-size: 30px;}
+
+/*Molinos de fricción*/
+.segundo section{background: white;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;}
+    
+    #friccion{background: rgb(219, 216, 216);
+    text-align: center;}
+/*trapetum*/
+.trapetum article img{width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;}
+
+    .trapetum{display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;}
+        .trapetum h1{background-color:rgb(209, 204, 204);
+            color:black;
+            display: flex;
+            flex-basis: 100%;
+            text-align: center;
+            font-size: 30px;}
+
+
