@@ -3,7 +3,7 @@
 /*normas generales*/
 *{margin: 10px;
     padding: 10px;
-    box-sizing: border-box;/*para que lo ajuste todo dentro de las cajas*/
+    
     border-radius: 10px;/*para que los bordes sean redondeados, al ponerlo aqui afecta a toda nuestra pagina*/
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
@@ -13,7 +13,7 @@
 body{background-color: beige;
 }
 
-.contenedor_principal{background-color: rgb(144, 191, 144) ;
+.contenedor_principal{background-color:rgb(196, 217, 196);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -22,32 +22,32 @@ body{background-color: beige;
 
 
 /*normas del header*/
-.header{background-color: rgb(242, 173, 147);
+.header{background-color:rgb(237, 237, 198);
     height: auto;
-    border: 1px solid rgb(246, 83, 110);}
-h1{background-color: grey;
+    border: 1px solid rgb(164, 101, 101);}
+h1{background-color: rgb(217, 213, 213);
 text-align: center;
 }
-h2{background-color: grey;
+h2{background-color: rgb(217, 213, 213);
 text-align: center;}
 
 h1, h2{border: 2px solid black;
 font-size: 40px;}
 
 /*normas del main*/
-.main{background-color:rgb(242, 173,147) ;
+.main{background-color:rgb(237, 237, 198);
     
-    border: 1px solid rgb(246, 83, 110);}
+    border:1px solid rgb(164, 101, 101);}
 
-.parrafo{background-color: grey;
+.parrafo{background-color: rgb(217, 213, 213);
 margin: 20px;
 border: 1px solid black;}
   
     
 
 /*normas del footer*/
-.footer{background-color:rgb(242, 173, 147) ;
-border: 1px solid rgb(246, 83, 110);
+.footer{background-color:rgb(237, 237, 198);
+border: 1px solid rgb(164, 101, 101);
 text-align: center;}
 
     .pie a{background-color: grey;
