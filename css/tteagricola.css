@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+/*comunes para todas*/
+*{margin: 10px;
+padding: 10px;
+border-radius: 10px;
+font-family: 'Roboto Slab', serif;}
+
+body{background: beige;}
+
+html{scroll-behavior:smooth;}
+
+/*container principal*/
+.container{background-color:rgb(196, 217, 196);
+border: 1px solid rgb(83, 179, 83);    
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;}
+
+/*estilos del menu exterior*/
+.exterior{ background-color: rgb(252, 252, 227);
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;}
+
+    .exterior a{background-color: rgb(177, 177, 157);
+        font-size: 12px;}
+        
+/*estilos del menu exterior*/              
+
+
+/*estilos del header*/
+.header{background-color:rgb(237, 237, 198);
+border:1px solid rgb(164, 101, 101);
+display: flex;
+flex-direction: column;}
+
+header h1{background-color: rgb(223, 220, 220);
+font-size: 50px;
+display: flex;
+justify-content: center;
+text-align: center;}
+
+    nav{display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;}
+
+        nav a{background-color: rgb(195, 189, 189);
+        color: rgb(14, 12, 12);
+        text-decoration: none;}
+
+    .inicio{background-color: rgb(72, 70, 70);
+    color: white;}
+
+
+/*estilos del main*/
+.main{background-color:rgb(237, 237, 198);
+border:1px solid rgb(164, 101, 101);
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;}
+    
+        main div{ background-color: rgb(208, 205, 205);
+        padding: 15px;
+        margin: 15px;
+        border: 1px solid rgb(205, 163, 163);}
+    
+            .subir{ background: rgb(179, 169, 169);
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display:flex ;
+            align-items: center;
+            justify-content: center;}
+    
+        h1{background-color: rgb(217, 219, 222);
+        border: 1px solid rgb(119, 119, 161);
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        font-size: 30px;}
+
+
+article{display: flex;
+justify-content: center;}
+    article img{width: 500px;
+    height: 400px;}
