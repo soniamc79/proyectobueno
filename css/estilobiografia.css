@@ -45,6 +45,8 @@ font-size: 40px;}
         font-size: 12px;
         text-decoration: none;
         color:black}
+        .nav a:hover{background-color: black;
+        color: white;}
 
 /*normas del main*/
 .main{background-color:rgb(237, 237, 198);

@@ -82,7 +82,14 @@ border: 1px solid rgb(164, 101, 101);}
         justify-content: center;
         color: rgb(47, 45, 45);
         border:1px solid rgb(89, 88, 88);
-        width: 100;}
+        width: 100;
+        border-radius: 0px 20px 20px 0px;
+        box-shadow: 5px 0px 10px grey;}
+
+        .nav a:hover{padding-left:50px;
+        background-color: black;
+        color: white;}
+
 /*fin barra de navegacion*/
 
 /*slider*/
@@ -127,6 +134,7 @@ border: 1px solid rgb(164, 101, 101);}
             flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
+            color: black;
             }
  
             .prueba{margin:0}
