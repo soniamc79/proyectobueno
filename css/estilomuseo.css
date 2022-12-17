@@ -220,4 +220,7 @@ text-align: center;}
     text-decoration: none;}
 /*fin del footer*/
 
+@media screen and(max-width:760px){
+    .header{background-color: blue;}
+}
 
