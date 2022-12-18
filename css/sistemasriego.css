@@ -25,7 +25,10 @@ flex-wrap: wrap;}
     align-items: center;}
 
     .exterior a{background-color: rgb(177, 177, 157);
-        font-size: 12px;}
+        font-size: 12px;
+    display: flex;
+justify-content: center;
+align-items: center;}
         
 /*estilos del menu exterior*/              
 
@@ -39,7 +42,8 @@ flex-direction: column;}
 header h1{background-color: rgb(223, 220, 220);
 font-size: 50px;
 display: flex;
-justify-content: center;}
+justify-content: center;
+text-align: center;}
 
     nav{display: flex;
     flex-direction: row;

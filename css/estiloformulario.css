@@ -28,4 +28,7 @@ html{scroll-behavior:smooth;}
 
             .footer{background-color:rgb(237, 237, 198);
                 border:1px solid rgb(164, 101, 101);}
+
+header.header h1{text-align: center;}
+
         

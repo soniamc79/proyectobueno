@@ -25,7 +25,10 @@ flex-wrap: wrap;}
     align-items: center;}
 
             .exterior a{background-color: rgb(177, 177, 157);
-            font-size: 12px;}
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;}
             
 /*estilos del menu exterior*/              
 
