@@ -29,6 +29,10 @@ flex-wrap: wrap;}
             display: flex;
             align-items: center;
             justify-content: center;}
+
+            .exterior a:hover{background-color: black;
+                color: white;}
+                
             
 /*estilos del menu exterior*/              
 

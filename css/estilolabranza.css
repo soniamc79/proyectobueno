@@ -28,7 +28,9 @@ align-items: center;}
     font-size: 12px;
     display: flex;
     justify-content: center;
-    align-items: center;}     
+    align-items: center;}  
+    .exterior a:hover{background-color: black;
+        color: white;}
 /*estilos del menu exterior*/              
 
 
