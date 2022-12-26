@@ -224,5 +224,9 @@ text-align: center;}
     div.seccionuno{display: none;}
 }
 
+@media screen and(max-width:484px){
+    .nombre{font-size: x-small;}
+}
+
 /*fin medias queris*/
 
