@@ -10,47 +10,100 @@
 </head>
 <body>
     <div class="container">
-        <form action="#">
+        <form action="#" class="formulario" id="formulario">
         <header class="header">
            <h1>FORMULARIO DE CONTACTO</h1> 
         </header>
         <main class="main">
         <fieldset>
             <legend>DATOS PERSONALES</legend>
-            <label for="name">NOMBRE*</label>
-            <input type="text" id="name" name="name" placeholder="Escriba su nombre" size="40" autofocus required>
-                <br>
-            <label for="apellidos">APELLIDOS*</label>
-            <input type="text" id="apellidos" name="apellidos" placeholder="Escriba sus apellidos" size="70" required>
-                <br>
-            <label for="direccion">DIRECCION*</label>
-            <input type="text" id="direccion" name="direccion" placeholder="Escriba su dirección" size="80" required>
+        <div class="dp">
+            <div class="formulario_nombre" id="grupo_datospersonales">
+            <label for="name" class="formulario_label">NOMBRE*</label>
+            <div class="formularioinput">
+            <input type="text" class="input" id="name" name="name" placeholder="Escriba su nombre" size="40" autofocus required>
+            <i class="validacion fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="inputerror">El nombre solo puede contener letras</p>
+            </div>   
+            <br>
+
+            <div class="formulario_apellidos" id="grupo_datospersonales">
+            <label for="apellidos" class="formulario_label">APELLIDOS*</label>
+            <div class="formularioinput">
+            <input type="text" class="input"  id="apellidos" name="apellidos" placeholder="Escriba sus apellidos" size="70" required>
+            <i class="validacion fa-solid fa-circle-xmark"></i>
+            </div> 
+            <p class="inputerror">Los apellidos solo pueden contener letras</p>
+            </div>  
+            <br>
+
+            <div class="formulario_direccion" id="grupo_datospersonales">
+            <label for="direccion" class="formulario_label">DIRECCION*</label>
+            <div class="formularioinput">
+            <input type="text" class="input"  id="direccion" name="direccion" placeholder="Escriba su dirección" size="80" required>
+            <i class="validacion fa-solid fa-circle-xmark"></i>
+            </div>
+            </div>
+        </div>       
         </fieldset>
 
         <fieldset>
             <legend>DATOS DE CONTACTO</legend>
-            <label for="email">EMAIL<i class="fa-solid fa-at"></i></laber>
-            <input type="email" id="email" name="email" size="50" placeholder="Escriba email">
+        <div class="dc">
+            <div class="formulario_email" id="grupo_datosdecontacto">
+            <label for="email" class="formulario_label">EMAIL<i class="fa-solid fa-at"></i></label>
+            <div class="formularioinput">
+            <input type="email"class="input" id="email" name="email" size="50" placeholder="correo@correo.com">
+            <i class="validacion fa-solid fa-circle-xmark"></i>
+            </div>
+            </div>
 
-            <label for="n">NUMERO DE CONTACTO*<i class="fa-solid fa-phone"></i></label>
-            <input type="tel" id="n" name="n" placeholder="Telefono" required>
 
+            <div class="formulariotelefono" id="grupo_datosdecontacto">
+            <label for="number" class="formulario_label">NUMERO DE CONTACTO*<i class="fa-solid fa-phone"></i></label>
+            <div class="formularioinput">
+            <input type="tel" id="number" name="number" placeholder="(+34) 111 111 111" required>
+            <i class="validacion fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="inputerror">El telefono debe ser igual que la estructura indicada</p>
+            </div>
+
+            <div class="preferenciacontacto">
             <p>PREFERENCIA PARA CONTACTAR</p> 
             <input type="radio" id="mañana" name="mañana" size="10" checked>
             <label for="mañana">En horario de mañanas.</label>
             <br/>
             <input type="radio" id="mañana" name="mañana" size="10">
             <label for="tarde">En horario de tarde.</label>
+            </div>
             </fieldset>
             <br/>
             <br/>
+            <fieldset>
+                <legend>COMENTARIOS</legend>
+                <textarea name="comentarios" rows="10" cols="60" placeholder="Escriba sus comentarios"></textarea>
+            </fieldset>
+    
+            <label class="formulario_label">
+                <input type="checkbox" class="formulariocheck" name="terminos" id="terminos">Acepto los términos y condiciones.
+            </label>
+    
+            <div class="formulario_mensaje" id="formulario_mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation"></i><b>ERROR:</b>Por favor, rellena el formulario correctamente</p>
+            </div>
+    
+            <div class="enviar">
+                <button class="boton" type="submit">ENVIAR</button>
+                <p class="correcto" id="correcto">EL FORMULARIO SE ENVIÓ CORRECTAMENTE</p>
+            </div>
+
+
+
+        </div>
         
-        <fieldset>
-            <legend>COMENTARIOS</legend>
-            <textarea name="comentarios" rows="10" cols="60" placeholder="Escriba sus comentarios"></textarea>
-        </fieldset>
-            <input type="submit">
-            </main>
+            
+    </main>
         
     </form>
         <footer class="footer">

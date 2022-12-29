@@ -53,9 +53,11 @@ border: 1px solid rgb(164, 101, 101);}
 
         .direccion{font-size: medium;
         text-align: center;}
-
-    div.encabezado figure img:hover{transform: translatex(30px);}
-   
+        .redes{font-size: small;
+        text-align: center;}
+        p.parrafo img{width: 70px;
+        transform: translateY(30px);}
+    
 
 .titulo{background: rgb(228, 226, 226);
     display: flex;
@@ -63,6 +65,8 @@ border: 1px solid rgb(164, 101, 101);}
     flex-wrap:nowrap;
     justify-content: space-around;
     border: 1px solid black;}
+
+
 
 /*barra de navegacion*/
 .nav{background: white;
