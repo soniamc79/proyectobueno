@@ -28,7 +28,7 @@ header.header h1{text-align: center;}
 .formulario_label{cursor: pointer;}
 .formularioinput{position: relative;}
 .input{width: 100%;
-border:3px solid rgb(46, 158, 146);
+border:3px solid rgb(162, 228, 221);
 border-radius: 3px;}
 .input:focus{
     border: 3px solid blue;
