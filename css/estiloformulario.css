@@ -201,6 +201,7 @@ div.formulario_telefono_incorrecto input#number{
 /*media queris*/
 
 @media screen and (max-width:710px){
-    div.container{background-color: rgb(181, 234, 234);}
+    div.container{background-color: rgb(181, 234, 234);
+    width: 100%;}
     
 }
