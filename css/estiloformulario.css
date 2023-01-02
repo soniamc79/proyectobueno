@@ -10,11 +10,18 @@ body{background: beige;}
 html{scroll-behavior:smooth;}
 
 .container{background-color:rgb(196, 217, 196);
-    border: 1px solid rgb(83, 179, 83);    
+    border: 1px solid rgb(83, 179, 83);
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;  
    }
 
     .header{background-color:rgb(237, 237, 198);
         border:1px solid rgb(164, 101, 101);
+        
+        display: flex;
+        justify-content: center;
+
        }
 
         .main{background-color:rgb(237, 237, 198);
@@ -22,11 +29,21 @@ html{scroll-behavior:smooth;}
             }
 
             .footer{background-color:rgb(237, 237, 198);
-                border:1px solid rgb(164, 101, 101);}
+            border:1px solid rgb(164, 101, 101);
+            width: 100%;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;}
+    footer.footer iframe{
+        width: 100%;
+        height: 100%;
+    }
 
-header.header h1{text-align: center;}
 .formulario_label{cursor: pointer;}
+/*reglas generales input*/
 .formularioinput{position: relative;}
+/*reglas del propio input*/
 .input{width: 100%;
 border:3px solid rgb(46, 158, 146);
 border-radius: 3px;
@@ -35,24 +52,26 @@ line-height: 45px;}
 .input:focus{
     border: 3px solid blue;
 }
+/*cuando el input es erroneo*/
 p.inputerror{
     margin-bottom: 0;
     display: none; /*oculto, solo aparece cuando hay error*/
 }
 p.inputerror-activo{display: block;}
-
+/*icono validacion*/
 i.validacion{position: absolute;
 right: 10px;
 bottom: 15px;
-opacity:0;
+/*opacity:0;*/
 z-index: 100;}
 
-div.formulariotelefono div.formularioinput i.validacion{position: absolute;
+div.formulario_telefono_correcto div.formularioinput i.validacion{position: absolute;
 left: 160px;
 bottom: 15px;
-opacity:0;
+/*opacity:0;*/
 z-index: 100;}
-
+/*fin icono validación*/
+/*mensaje error de cada celda*/
 div.formulario_mensaje {
     background-color: rgb(192, 144, 237);
     border-radius: 3px;
@@ -66,7 +85,8 @@ div.formulario_mensaje-activo {
 div.formulario_mensaje p{
     margin: 0;
 }
-
+/*fin mensaje error de cada celda*/
+/*boton enviar*/
 div.enviar{
     display: flex;
     flex-direction: column;
@@ -79,13 +99,108 @@ div.enviar button.boton{
     color:white;
     cursor:pointer
 }
-
+div.enviar button.boton:hover{
+    background-color: white;
+    color: black;
+}
+/*fin boton enviar*/
+/*parrafo de formulario correcto*/
 div.enviar p.correcto{
-    color:rgb(17, 200, 17);
+    color:rgb(14, 185, 45);
     display: none;
 }
 
 div.enviar p.correcto-activo{
     display: block;
 }
+/*fin de parrafo de formulario correcto*/
 
+/*estilos de validacion*/
+div.formulario_nombre_correcto i.validacion{
+    color: green;
+    opacity: 1;
+}
+div.formulario_apellidos_correcto i.validacion{
+    color: green;
+    opacity: 1;
+}
+div.formulario_direccion_correcto i.validacion{
+    color: green;
+    opacity: 1;
+}
+
+div.formulario_email_correcto i.validacion{
+    color: green;
+    opacity: 1;
+}
+div.formulario_telefono_correcto i.validacion{
+    color: green;
+    opacity: 1;
+}
+/*incorrecto*/
+div.formulario_nombre_incorrecto label.formulario_label{
+    color: red;
+}
+div.formulario_nombre_incorrecto i.validacion{
+    color:red;
+    opacity: 1;
+}
+div.formulario_nombre_incorrecto input.input{
+    border: 3px solid red;
+}
+/*-------------------------------------*/
+div.formulario_apellidos_incorrecto label.formulario_label{
+    color: red;
+
+}
+div.formulario_apellidos_incorrecto i.validacion{
+    color: red;
+    opacity: 1;
+} 
+div.formulario_apellidos_incorrecto input.input{
+    border: 3px solid red;
+}
+/*---------------------------------------*/
+div.formulario_direccion_incorrecto label.formulario_label{
+    color: red;
+
+}
+div.formulario_direccion_incorrecto i.validacion{
+    color: red;
+    opacity: 1;
+} 
+div.formulario_direccion_incorrecto input.input{
+    border: 3px solid red;
+}
+/*----------------------------------------*/
+div.formulario_email_incorrecto label.formulario_label{
+    color: red;
+
+}
+div.formulario_email_incorrecto i.validacion{
+    color: red;
+    opacity: 1;
+} 
+div.formulario_email_incorrecto input.input{
+    border: 3px solid red;
+}
+/*-----------------------------------------*/
+div.formulario_telefono_incorrecto label.formulario_label{
+    color: red;
+
+}
+div.formulario_telefono_incorrecto i.validacion{
+    color: red;
+    opacity: 1;
+} 
+div.formulario_telefono_incorrecto input#number{
+    border: 3px solid red;
+}
+
+/*--------------------------------------------*/
+/*media queris*/
+
+@media screen and (max-width:710px){
+    div.container{background-color: rgb(181, 234, 234);}
+    
+}

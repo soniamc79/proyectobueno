@@ -18,7 +18,7 @@
         <fieldset>
             <legend>DATOS PERSONALES</legend>
         <div class="dp">
-            <div class="formulario_nombre" id="grupo_datospersonales">
+            <div class="formulario_nombre_correcto formulario_nombre_incorrecto" id="grupo_datospersonales">
             <label for="name" class="formulario_label">NOMBRE*</label>
             <div class="formularioinput">
             <input type="text" class="input" id="name" name="name" placeholder="Escriba su nombre" size="40" autofocus required>
@@ -28,7 +28,7 @@
             </div>   
             <br>
 
-            <div class="formulario_apellidos" id="grupo_datospersonales">
+            <div class="formulario_apellidos_correcto formulario_apellidos_incorrecto" id="grupo_datospersonales">
             <label for="apellidos" class="formulario_label">APELLIDOS*</label>
             <div class="formularioinput">
             <input type="text" class="input"  id="apellidos" name="apellidos" placeholder="Escriba sus apellidos" size="70" required>
@@ -38,12 +38,13 @@
             </div>  
             <br>
 
-            <div class="formulario_direccion" id="grupo_datospersonales">
+            <div class="formulario_direccion_correcto formulario_direccion_incorrecto" id="grupo_datospersonales">
             <label for="direccion" class="formulario_label">DIRECCION*</label>
             <div class="formularioinput">
             <input type="text" class="input"  id="direccion" name="direccion" placeholder="Escriba su dirección" size="80" required>
             <i class="validacion fa-solid fa-circle-xmark"></i>
             </div>
+            <p class="inputerror">La direccion puede tener solo letras y numeros</p>
             </div>
         </div>       
         </fieldset>
@@ -51,16 +52,16 @@
         <fieldset>
             <legend>DATOS DE CONTACTO</legend>
         <div class="dc">
-            <div class="formulario_email" id="grupo_datosdecontacto">
+            <div class="formulario_email_correcto formulario_email_incorrecto" id="grupo_datosdecontacto">
             <label for="email" class="formulario_label">EMAIL<i class="fa-solid fa-at"></i></label>
             <div class="formularioinput">
-            <input type="email"class="input" id="email" name="email" size="50" placeholder="correo@correo.com">
+            <input type="email" class="input" id="email" name="email" size="50" placeholder="correo@correo.com">
             <i class="validacion fa-solid fa-circle-xmark"></i>
             </div>
             </div>
 
 
-            <div class="formulariotelefono" id="grupo_datosdecontacto">
+            <div class="formulario_telefono_correcto formulario_telefono_incorrecto" id="grupo_datosdecontacto">
             <label for="number" class="formulario_label">NUMERO DE CONTACTO*<i class="fa-solid fa-phone"></i></label>
             <div class="formularioinput">
             <input type="tel" id="number" name="number" placeholder="(+34) 111 111 111" required>
@@ -80,10 +81,7 @@
             </fieldset>
             <br/>
             <br/>
-            <fieldset>
-                <legend>COMENTARIOS</legend>
-                <textarea name="comentarios" rows="10" cols="60" placeholder="Escriba sus comentarios"></textarea>
-            </fieldset>
+            
     
             <label class="formulario_label">
                 <input type="checkbox" class="formulariocheck" name="terminos" id="terminos">Acepto los términos y condiciones.
@@ -98,19 +96,19 @@
                 <p class="correcto" id="correcto">EL FORMULARIO SE ENVIÓ CORRECTAMENTE</p>
             </div>
 
-
+        </form>
 
         </div>
         
             
     </main>
         
-    </form>
-        <footer class="footer">
+    
+<footer class="footer">
 <h2>DONDE ENCONTRARNOS<i class="fa-solid fa-house"></i></h2>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.2093066396505!2d-3.8050494489719586!3d37.9722444084469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6c2b96e0c57219%3A0xa60eee666c9a42a7!2sCADE%20Meng%C3%ADbar!5e0!3m2!1ses!2ses!4v1671128318435!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
-        </footer>
-    </div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.2093066396505!2d-3.8050494489719586!3d37.9722444084469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6c2b96e0c57219%3A0xa60eee666c9a42a7!2sCADE%20Meng%C3%ADbar!5e0!3m2!1ses!2ses!4v1671128318435!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+</footer>
+
    
    
     
