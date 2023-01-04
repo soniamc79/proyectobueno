@@ -66,12 +66,14 @@ p.inputerror-activo{display: block;}
 i.validacion{position: absolute;
 right: 10px;
 bottom: 15px;
+display: none;
 opacity:0;
 z-index: 100;}
 
 div.formulario_telefono_correcto div.formularioinput i.validacion{position: absolute;
 left: 160px;
 bottom: 15px;
+display: none;
 opacity:0;
 z-index: 100;}
 /*fin icono validación*/
@@ -142,65 +144,42 @@ div.formulario_telefono_correcto i.validacion{
     opacity: 1;
 }
 /*incorrecto*/
-div.formulario_nombre_incorrecto label.formulario_label{
-    color: red;
-    opacity:1;
-}
+
 div.formulario_nombre_incorrecto i.validacion{
     color:red;
     opacity: 1;
+  
 }
-div.formulario_nombre_incorrecto input.input{
-    border: 3px solid red;
-}
-/*-------------------------------------*/
-div.formulario_apellidos_incorrecto label.formulario_label{
-    color: red;
 
-}
+/*-------------------------------------*/
+
 div.formulario_apellidos_incorrecto i.validacion{
     color: red;
     opacity: 1;
 } 
-div.formulario_apellidos_incorrecto input.input{
-    border: 3px solid red;
-}
-/*---------------------------------------*/
-div.formulario_direccion_incorrecto label.formulario_label{
-    color: red;
 
-}
+/*---------------------------------------*/
+
+
 div.formulario_direccion_incorrecto i.validacion{
     color: red;
     opacity: 1;
 } 
-div.formulario_direccion_incorrecto input.input{
-    border: 3px solid red;
-}
-/*----------------------------------------*/
-div.formulario_email_incorrecto label.formulario_label{
-    color: red;
 
-}
+/*----------------------------------------*/
+
 div.formulario_email_incorrecto i.validacion{
     color: red;
     opacity: 1;
 } 
-div.formulario_email_incorrecto input.input{
-    border: 3px solid red;
-}
-/*-----------------------------------------*/
-div.formulario_telefono_incorrecto label.formulario_label{
-    color: red;
 
-}
+/*-----------------------------------------*/
+
 div.formulario_telefono_incorrecto i.validacion{
     color: red;
     opacity: 1;
 } 
-div.formulario_telefono_incorrecto input#number{
-    border: 3px solid red;
-}
+
 
 /*--------------------------------------------*/
 /*media queris*/
