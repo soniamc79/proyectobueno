@@ -5,102 +5,89 @@ padding: 10px;
 border-radius: 10px;
 font-family: 'Roboto Slab', serif;}
 
-body{background: beige;}
+body{background:rgb(197, 197, 189);
+display: flex;
+justify-content: center;
+align-items: center;}
 
-html{scroll-behavior:smooth;}
-
-.container{background-color:rgb(196, 217, 196);
+.container{background-color:rgb(152, 171, 152);
     border: 1px solid rgb(83, 179, 83);
-    width: 100%; 
     display: flex; 
-    flex-direction: column;  
+    flex-direction: column;   
    }
-
-    .header{background-color:rgb(237, 237, 198);
-        border:1px solid rgb(164, 101, 101);  
+        form.formulario{ background-color: white;
         display: flex;
-        justify-content: center;
-       }
+        flex-direction: column;
+        align-items: center;
+    }
 
-        .main{background-color:rgb(237, 237, 198);
-            border:1px solid rgb(164, 101, 101);
+        .header{background-color:rgb(197, 197, 189);
+        border:1px solid rgb(164, 101, 101);
+        width: 95%; 
+       }
+        header.header h1{text-align: center;}
+
+            .main{background-color:rgb(197, 197, 189);
+             border:1px solid rgb(164, 101, 101);
+             width: 95%;
             display: flex;
             flex-direction: column;
             align-items: center;
             }
-
-
-
-            .footer{background-color:rgb(237, 237, 198);
-            border:1px solid rgb(164, 101, 101);
-            width: 100%;
-            height: 600px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;}
-                footer.footer iframe{
-                width: 100%;
-                height: 100%;
+                fieldset{background-color: rgb(238, 234, 234);
+                width: 95%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
             }
+            div.formulario{width: 100%;}
+                div.formulario_email{display: flex;
+                flex-direction: row;} 
+
+                div.formulario_telefono{display: flex;
+                    flex-direction: row;} 
+
+                    div.formulario_telefono div.formularioinput input{height: 45px;
+                        border:3px solid rgb(194, 217, 214);
+                        border-radius: 3px;
+                        line-height: 45px;
+                    }
+                    
+                    .input{width: 100%;
+                        border:3px solid rgb(194, 217, 214);
+                        border-radius: 3px;
+                        height: 45px;
+                        line-height: 45px;
+                        cursor:pointer;
+                    }
+
+                            div.preferenciacontacto{background-color: rgb(250, 236, 236);
+                            border: 1px solid grey;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;} 
+
+                                div.preferenciacontacto div.mañana{display: flex;
+                                flex-direction: row;}
+
+                                div.preferenciacontacto div.tarde{display: flex;
+                                flex-direction: row;}
+
+div.fc{
+    display: flex;   
+}
+div.fc textarea{width: 600px;
+    height: 200px;
+}
 
 
-.formulario_label{cursor: pointer;}
-/*reglas generales input*/
-.formularioinput{position: relative;}
-/*reglas del propio input*/
-.input{width: 100%;
-border:3px solid rgb(46, 158, 146);
-border-radius: 3px;
-height: 45px;
-line-height: 45px;}
-.input:focus{
-    border: 3px solid blue;
-}
-/*cuando el input es erroneo*/
-p.inputerror{
-    margin-bottom: 0;
-    display: none; /*oculto, solo aparece cuando hay error*/
-}
-p.inputerror-activo{display: block;}
-/*icono validacion*/
-i.validacion{position: absolute;
-right: 10px;
-bottom: 15px;
-display: none;
-opacity:0;
-z-index: 100;}
+           div.checkbox{background-color: rgb(238, 234, 234);}
 
-div.formulario_telefono_correcto div.formularioinput i.validacion{position: absolute;
-left: 160px;
-bottom: 15px;
-display: none;
-opacity:0;
-z-index: 100;}
-/*fin icono validación*/
-/*mensaje error de cada celda*/
-div.formulario_mensaje {
-    background-color: rgb(192, 144, 237);
-    border-radius: 3px;
-    padding: 15px;
-    display: none;
-}
 
-div.formulario_mensaje-activo {
-    display: block;
-}
-div.formulario_mensaje p{
-    margin: 0;
-}
-/*fin mensaje error de cada celda*/
-/*boton enviar*/
-div.enviar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 div.enviar button.boton{
-    width: 30%;
     background-color: black;
     color:white;
     cursor:pointer
@@ -109,83 +96,40 @@ div.enviar button.boton:hover{
     background-color: white;
     color: black;
 }
-/*fin boton enviar*/
-/*parrafo de formulario correcto*/
+
 div.enviar p.correcto{
     color:rgb(14, 185, 45);
     display: none;
 }
+.warnings{width: 200px;
+text-align: center;
+margin: auto;
+color:red;
+padding-top: 20px;}
 
-div.enviar p.correcto-activo{
-    display: block;
-}
-/*fin de parrafo de formulario correcto*/
-
-/*estilos de validacion*/
-div.formulario_nombre_correcto i.validacion{
-    color: green;
-    opacity: 1;
-}
-div.formulario_apellidos_correcto i.validacion{
-    color: green;
-    opacity: 1;
-}
-div.formulario_direccion_correcto i.validacion{
-    color: green;
-    opacity: 1;
-}
-
-div.formulario_email_correcto i.validacion{
-    color: green;
-    opacity: 1;
-}
-div.formulario_telefono_correcto i.validacion{
-    color: green;
-    opacity: 1;
-}
-/*incorrecto*/
-
-div.formulario_nombre_incorrecto i.validacion{
-    color:red;
-    opacity: 1;
-  
-}
-
-/*-------------------------------------*/
-
-div.formulario_apellidos_incorrecto i.validacion{
-    color: red;
-    opacity: 1;
-} 
-
-/*---------------------------------------*/
+.footer{background-color: rgb(238, 234, 234);
+    border:1px solid rgb(164, 101, 101);
+    width: 95%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+        footer.footer iframe{
+        width: 90%;
+        height: 100%;
+    }
 
 
-div.formulario_direccion_incorrecto i.validacion{
-    color: red;
-    opacity: 1;
-} 
 
-/*----------------------------------------*/
 
-div.formulario_email_incorrecto i.validacion{
-    color: red;
-    opacity: 1;
-} 
 
-/*-----------------------------------------*/
-
-div.formulario_telefono_incorrecto i.validacion{
-    color: red;
-    opacity: 1;
-} 
 
 
 /*--------------------------------------------*/
 /*media queris*/
 
-@media screen and (max-width:584px){
-    div.container{background-color: rgb(181, 234, 234);
+@media screen and (max-width:500px){
+    div.formulario{width: 80%;
    }
 
  

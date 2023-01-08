@@ -10,97 +10,116 @@
 </head>
 <body>
     <div class="container">
+        <!--empieza el formulario de contacto-->
         <form  name ="myForm" action="#" class="formulario" id="formulario">
+        <!--header del formulario de contacto donde solo está el titulo-->
         <header class="header">
            <h1>FORMULARIO DE CONTACTO</h1> 
         </header>
+        <!--empieza el main del formulario-->
         <main class="main">
+        <!--empieza el fieldset de datos personales-->
         <fieldset>
-            <legend>DATOS PERSONALES</legend>
+            <legend><h2>DATOS PERSONALES</h2></legend>
         <div class="dp">
-            <div class="formulario_nombre_correcto formulario_nombre_incorrecto" id="grupo_datospersonales">
-            <label for="name" class="formulario_label">NOMBRE*</label>
-            <div class="formularioinput">
-            <input type="text" class="input" id="name" name="name" placeholder="Escriba su nombre" size="40" autofocus required>
-            <i class="validacion fa-solid fa-circle-xmark"></i>
-            </div>
-            <p class="inputerror">El nombre solo puede contener letras</p>
+            <!--grupo nombre-->
+            <div class="formulario_nombre" id="grupo_datospersonales">
+
+                <label for="name" class="formulario_label"><h3>NOMBRE*</h3></label>
+
+                    <div class="formularioinput">
+                        <input type="text" class="input" id="name" name="name" placeholder="Escriba su nombre" size="40" autofocus minlength="4" >
+                    </div>
             </div>   
-            <br>
+<br><!-------------------------------------------------------->
+            <!--grupo apellidos-->
+            <div class="formulario_apellidos" id="grupo_datospersonales">
 
-            <div class="formulario_apellidos_correcto formulario_apellidos_incorrecto" id="grupo_datospersonales">
-            <label for="apellidos" class="formulario_label">APELLIDOS*</label>
-            <div class="formularioinput">
-            <input type="text" class="input"  id="apellidos" name="apellidos" placeholder="Escriba sus apellidos" size="70" required>
-            <i class="validacion fa-solid fa-circle-xmark"></i>
-            </div> 
-            <p class="inputerror">Los apellidos solo pueden contener letras</p>
+                <label for="apellidos" class="formulario_label"><h3>APELLIDOS*</h3></label>
+
+                    <div class="formularioinput">
+                        <input type="text" class="input"  id="apellidos" name="apellidos" placeholder="Escriba sus apellidos" size="70" minlength="4">
+                    </div> 
             </div>  
-            <br>
+<br><!-------------------------------------------------------->
+            <!--grupo direccion-->
+            <div class="formulario_direccion" id="grupo_datospersonales">
 
-            <div class="formulario_direccion_correcto formulario_direccion_incorrecto" id="grupo_datospersonales">
-            <label for="direccion" class="formulario_label">DIRECCION*</label>
-            <div class="formularioinput">
-            <input type="text" class="input"  id="direccion" name="direccion" placeholder="Escriba su dirección" size="80" required>
-            <i class="validacion fa-solid fa-circle-xmark"></i>
-            </div>
-            <p class="inputerror">La direccion puede tener solo letras y numeros</p>
+                <label for="direccion" class="formulario_label"><h3>DIRECCION*</h3></label>
+
+                    <div class="formularioinput">
+                        <input type="text" class="input"  id="direccion" name="direccion" placeholder="Escriba su dirección" size="80">
+                    </div>
             </div>
         </div>       
         </fieldset>
-
+<!--empieza el fieldset de datos de contacto-->
         <fieldset class="datos_contacto">
-            <legend>DATOS DE CONTACTO</legend>
+            <legend><h2>DATOS DE CONTACTO</h2></legend>
             <div class="dc">
-            <div class="formulario_email_correcto formulario_email_incorrecto" id="grupo_datosdecontacto">
-            <label for="email" class="formulario_label">EMAIL<i class="fa-solid fa-at"></i></label>
-            <div class="formularioinput">
-            <input type="email" class="input" id="email" name="email" size="50" placeholder="correo@correo.com">
-            <i class="validacion fa-solid fa-circle-xmark"></i>
-            </div>
+                <!--grupo email-->
+                <div class="formulario_email" id="grupo_datosdecontacto">
+
+                <label for="email" class="formulario_label"><h3>EMAIL<i class="fa-solid fa-at"></i></h3></label>
+
+                    <div class="formularioinput">
+                        <input type="email" class="input" id="email" name="email" size="50" placeholder="correo@correo.com">
+                    </div>
+                </div>
+<br/><!-------------------------------------------------------->
+            <!--grupo telefono-->
+            <div class="formulario_telefono" id="grupo_datosdecontacto">
+
+                <label for="number" class="formulario_label"><h3>NUMERO MOVIL DE CONTACTO*<i class="fa-solid fa-phone"></i></h3></label>
+
+                    <div class="formularioinput">
+                        <input type="tel" id="number" name="number" placeholder="(+34) 111 111 111">
+                    </div>
             </div>
 
-
-            <div class="formulario_telefono_correcto formulario_telefono_incorrecto" id="grupo_datosdecontacto">
-            <label for="number" class="formulario_label">NUMERO DE CONTACTO*<i class="fa-solid fa-phone"></i></label>
-            <div class="formularioinput">
-            <input type="tel" id="number" name="number" placeholder="(+34) 111 111 111" required>
-            <i class="validacion fa-solid fa-circle-xmark"></i>
-            </div>
-            <p class="inputerror">El telefono debe ser igual que la estructura indicada</p>
-            </div>
-
+<br><!-------------------------------------------------------->            
+            <!--grupo preferencia de contacto-->
             <div class="preferenciacontacto">
-            <p>PREFERENCIA PARA CONTACTAR</p> 
-            <input type="radio" id="mañana" name="mañana" size="10" checked>
-            <label for="mañana">En horario de mañanas.</label>
+                <p><h2>PREFERENCIA PARA CONTACTAR</h2></p>
+                    <div class="mañana">
+                    <input   type="radio" id="mañana" name="mañana" size="10" checked>
+                    <label for="mañana">En horario de mañanas.</label>
+                    </div>
             <br/>
-            <input type="radio" id="mañana" name="mañana" size="10">
-            <label for="tarde">En horario de tarde.</label>
+                    <div class="tarde">
+                    <input  type="radio" id="mañana" name="mañana" size="10">
+                    <label for="tarde">En horario de tarde.</label>
+                    </div>
             </div>
-        </div>  
+            </div> 
+            
+            </fieldset>
+            <fieldset class="fieldset_comentarios">
+                <legend><h2>COMENTARIOS</h2></legend>
+                <div class="fc">
+                    <div class="comentarios">
+                    <textarea name="comentarios" id="comentarios" maxlength="400" placeholder="Introduce aquí tus comentarios"></textarea>
+                </div>
             </fieldset>
         </main>
-            <br/>
-            <br/>
+<br/><!--------------------------------------------------------> 
+<br/><!--------------------------------------------------------> 
         
-    
+            <!--grupo terminos y condiciones-->
+            <div class="checkbox">
             <label class="formulario_label">
                 <input type="checkbox" class="formulariocheck" name="terminos" id="terminos">Acepto los términos y condiciones.
             </label>
-    
-            <div class="formulario_mensaje" id="formulario_mensaje">
-                <p><i class="fa-solid fa-triangle-exclamation"></i><b>ERROR:</b>Por favor, rellena el formulario correctamente</p>
             </div>
-    
+            <!--grupo boton enviar-->
             <div class="enviar">
                 <button class="boton" id ="enviar" type="submit">ENVIAR</button>
-                <p class="correcto" id="correcto">EL FORMULARIO SE ENVIÓ CORRECTAMENTE</p>
+                
+                <p class="warnings" id="warnings"></p>
             </div>
          
-        <script src="./css/formulario.js"></script>
+        <script src="./js/prueba.js"></script>
         </form>
-        </div>
   
             
     
@@ -110,6 +129,7 @@
 <h2>DONDE ENCONTRARNOS<i class="fa-solid fa-house"></i></h2>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.2093066396505!2d-3.8050494489719586!3d37.9722444084469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6c2b96e0c57219%3A0xa60eee666c9a42a7!2sCADE%20Meng%C3%ADbar!5e0!3m2!1ses!2ses!4v1671128318435!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
 </footer>
+</div>
 
    
    
