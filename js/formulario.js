@@ -37,28 +37,29 @@ if (nombre == ""){
          alert("El campo direccion solo puede contener letras, la primera mayúscula");
      }
  } 
-}
+
  /*--------------------------------------------------*/
-  /*let email = document.forms["myForm"]["email"].value;
+let email = document.forms["myForm"]["email"].value;
  if (email  == ""){
      alert("El campo email no puede estar vacío");
  }else{
-     let cadEmail =/^(a-z0-9_\.-)+@([\da-z\.-]+)\.([a-z\.]{2.6})$/;
+     let cadEmail =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/;
      if(!cadEmail.test(email)){
-         alert("El campo email solo puede contener letras, numeros guiones y @");
+         alert("el campo email no es valido");
      }
- }*/ 
+ }
 /*--------------------------------------------------*/
- /*let telefono = document.forms["myForm"]["number"].value;
+ let telefono = document.forms["myForm"]["number"].value;
  if (telefono  == ""){
      alert("El campo telefono no puede estar vacío");
  }else{
-     let cadTelefono =/^ (\+34|0034|34)?+(6|7)[0-9]{8}$/;
+    let cadTelefono=/^\+\d{2,3}\s\d{9}$/;
      if(!cadTelefono.test(telefono)){
          alert("El campo Móvil sólo puede contener números");
      }
  }
- */
+}
+
 
 
 
