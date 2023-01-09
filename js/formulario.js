@@ -17,17 +17,18 @@ if (nombre == ""){
 }
 /*--------------------------------------------------*/
 
-let apellido = document.forms["myForm"]["apellidos"].value;
+ let apellido = document.forms["myForm"]["apellidos"].value;
     if (apellido == ""){
         alert("El campo Apellidos  no puede estar vacío");
     }else{
-        let cadApellido =/^[A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]+[A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+$/;
+        let cadApellido =/^[A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+$/;
         if(!cadApellido.test(apellido)){
             alert("La primera letra de cada apellido debe ser Mayúscula, y debes introducir los dos apellidos");
         }
     }
+
  /*--------------------------------------------------*/
- let direccion = document.forms["myForm"]["direccion"].value;
+  let direccion = document.forms["myForm"]["direccion"].value;
  if (direccion  == ""){
      alert("El campo Dirección no puede estar vacío");
  }else{
@@ -35,9 +36,10 @@ let apellido = document.forms["myForm"]["apellidos"].value;
      if(!cadDireccion.test(direccion)){
          alert("El campo direccion solo puede contener letras, la primera mayúscula");
      }
- }
+ } 
+}
  /*--------------------------------------------------*/
- let email = document.forms["myForm"]["email"].value;
+  /*let email = document.forms["myForm"]["email"].value;
  if (email  == ""){
      alert("El campo email no puede estar vacío");
  }else{
@@ -45,9 +47,9 @@ let apellido = document.forms["myForm"]["apellidos"].value;
      if(!cadEmail.test(email)){
          alert("El campo email solo puede contener letras, numeros guiones y @");
      }
- }
+ }*/ 
 /*--------------------------------------------------*/
- let telefono = document.forms["myForm"]["number"].value;
+ /*let telefono = document.forms["myForm"]["number"].value;
  if (telefono  == ""){
      alert("El campo telefono no puede estar vacío");
  }else{
@@ -56,8 +58,8 @@ let apellido = document.forms["myForm"]["apellidos"].value;
          alert("El campo Móvil sólo puede contener números");
      }
  }
- 
-}
+ */
+
 
 
 
